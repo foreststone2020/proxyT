@@ -1,0 +1,19 @@
+{
+  "name": "proxyT",
+  "version": "1.0.0",
+  "dependencies": {
+    "@openzeppelin/test-environment": "^0.1.9",
+    "@openzeppelin/test-helpers": "^0.5.11",
+    "@truffle/hdwallet-provider": "^1.2.3",
+    "@openzeppelin/contracts": "^4.8.3"
+  },
+  "scripts": {
+    "test": "mocha --timeout=150000 --exit --recursive",
+    "robot": "node ./test/robot.js",
+    "abi": "node ./gen-abi.js",
+    "address": "node ./address-gen.js"
+  },
+  "devDependencies": {
+    "@openzeppelin/truffle-upgrades": "^1.18.0"
+  }
+}
